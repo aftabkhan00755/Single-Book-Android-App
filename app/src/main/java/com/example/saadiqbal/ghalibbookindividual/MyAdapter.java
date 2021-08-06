@@ -31,11 +31,11 @@ public class MyAdapter extends ArrayAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        Typeface typeface = Typeface.createFromAsset(context.getAssets(), "fonts/mnw.ttf");
+      //  Typeface typeface = Typeface.createFromAsset(context.getAssets(), "fonts/mnw.ttf");
         convertView = inflater.inflate(R.layout.item_row, null);//set layout for displaying items
         TextView icon = (TextView) convertView.findViewById(R.id.textHeader);//get id for image view
 
-        icon.setTypeface(typeface);
+       // icon.setTypeface(typeface);
         icon.setText("" + itemList.get(position).index);
         if(itemList.get(position).getType())
         {

@@ -49,9 +49,9 @@ public class ReaderBook extends AppCompatActivity implements View.OnClickListene
         nextchap = (ImageView)findViewById(R.id.forwardtoforward);
         prevchap = (ImageView)findViewById(R.id.backtoback);
         home = (ImageView)findViewById(R.id.homescreen);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/mnw.ttf");
-        bookchapte.setTypeface(typeface);
-        textt.setTypeface(typeface);
+     //   Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/mnw.ttf");
+      //  bookchapte.setTypeface(typeface);
+     //   textt.setTypeface(typeface);
         itemsList=new ArrayList<>();
 
 
@@ -502,8 +502,8 @@ public class ReaderBook extends AppCompatActivity implements View.OnClickListene
             e.printStackTrace();
         }
 
-        bookchapte.setTypeface(typeface);
-        heading.setTypeface(typeface);
+      //  bookchapte.setTypeface(typeface);
+      //  heading.setTypeface(typeface);
     }
 
     private void fileRead(int position)
